@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarushv's AB Tips</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        section {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .tips, .resources {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        .tip, .resource {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            flex: 1;
+            min-width: 300px;
+            transition: transform 0.3s;
+        }
+        .tip:hover, .resource:hover {
+            transform: translateY(-5px);
+        }
+        .tip h2, .resource h2 {
+            margin-top: 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .dark-mode {
+            background-color: #333;
+            color: white;
+        }
+        .dark-mode header {
+            background-color: #222;
+        }
+        .dark-mode nav {
+            background-color: #222;
+        }
+        .dark-mode footer {
+            background-color: #222;
+        }
+        .dark-mode .tip, .dark-mode .resource {
+            background-color: #444;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+        .dark-mode nav a {
+            color: white;
+        }
+        .dark-mode nav a:hover {
+            background-color: #575757;
+        }
+        .dark-mode .tip:hover, .dark-mode .resource:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tarushv's AB Tips</h1>
+    </header>
+    <nav>
+        <a href="#tips">Tips & Tricks</a>
+        <a href="#resources">Resources</a>
+        <a href="javascript:void(0);" onclick="toggleDarkMode()">Toggle Dark Mode</a>
+    </nav>
+    <section id="tips" class="tips">
+        <div class="tip">
+            <h2>Understand the Basics</h2>
+            <p>Make sure you have a strong foundation in precalculus topics like functions, graphs, and limits.</p>
+        </div>
+        <div class="tip">
+            <h2>Practice Daily</h2>
+            <p>Consistency is key. Spend time each day working on calculus problems to reinforce your learning.</p>
+        </div>
+        <div class="tip">
+            <h2>Use Multiple Resources</h2>
+            <p>Don't rely on just one textbook or website. Explore different resources to get a broader understanding.</p>
+        </div>
+        <div class="tip">
+            <h2>Join a Study Group</h2>
+            <p>Collaborate with classmates to solve problems and discuss concepts. Teaching others can help solidify your own understanding.</p>
+        </div>
+    </section>
+    <section id="resources" class="resources">
+        <div class="resource">
+            <h2>Official AP Calculus Course Description</h2>
+            <p>Get detailed information about the course and exam format from the <a href="https://apcentral.collegeboard.org/courses/ap-calculus-ab" target="_blank">College Board</a>.</p>
+        </div>
+        <div class="resource">
+            <h2>Khan Academy</h2>
+            <p>Free online lessons and practice problems covering all AP Calculus topics. Visit <a href="https://www.khanacademy.org/math/ap-calculus-ab" target="_blank">Khan Academy</a>.</p>
+        </div>
+        <div class="resource">
+            <h2>Paul's Online Math Notes</h2>
+            <p>Comprehensive notes and tutorials for calculus students. Explore <a href="http://tutorial.math.lamar.edu/classes/calci/calci.aspx" target="_blank">Paul's Online Math Notes</a>.</p>
+        </div>
+        <div class="resource">
+            <h2>Desmos Graphing Calculator</h2>
+            <p>A powerful online graphing tool to visualize functions and explore calculus concepts. Try <a href="https://www.desmos.com/calculator" target="_blank">Desmos</a>.</p>
+        </div>
+        <div class="resource">
+            <h2>Unit 1: Limits and Continuity</h2>
+            <p>Learn about limits and continuity with resources from <a href="https://www.khanacademy.org/math/ap-calculus-ab/ab-limits-new" target="_blank">Khan Academy</a> and <a href="http://tutorial.math.lamar.edu/classes/calci/Limits.aspx" target="_blank">Paul's Notes</a>.</p>
+        </div>
+        <div class="resource">
+            <h2>Unit 2: Differentiation</h2>
+            <p>Explore differentiation with <a href="https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-1-new" target="_blank">Khan Academy</a> and <a href="http://tutorial.math.lamar.edu/classes/calci/Derivatives.aspx" target="_blank">Paul's Notes</a>.</p>
+        </div>
+        <div class="resource">
+            <h2>Unit 3: Differentiation Applications</h2>
+            <p>Understand the applications of differentiation with <a href="https://www.khanacademy.org/math/ap-calculus-ab/ab-diff-contextual-new" target="_blank">Khan Academy</a> and <a href="http://tutorial.math.lamar.edu/classes/calci/AppsOfDerivatives.aspx" target="_blank">Paul's Notes</a>.</p>
+        </div>
+        <div class="resource">
+            <h2>Unit 4: Integration</h2>
+            <p>Learn about integration with <a href="https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new" target="_blank">Khan Academy</a> and <a href="http://tutorial.math.lamar.edu/classes/calci/Integration.aspx" target="_blank">Paul's Notes</a>.</p>
+        </div>
+        <div class="resource">
+            <h2>Unit 5: Integration Applications</h2>
+            <p>Explore the applications of integration with <a href="https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-applications-new" target="_blank">Khan Academy</a> and <a href="http://tutorial.math.lamar.edu/classes/calci/AppsOfIntegration.aspx" target="_blank">Paul's Notes</a>.</p>
+        </div>
+        <div class="resource">
+            <h2>Unit 6: Differential Equations</h2>
+            <p>Understand differential equations with <a href="https://www.khanacademy.org/math/ap-calculus-ab/ab-differential-equations-new" target="_blank">Khan Academy</a> and <a href="http://tutorial.math.lamar.edu/classes/de/intro.aspx" target="_blank">Paul's Notes</a>.</p>
+        </div>
+        <div class="resource">
+            <h2>AP Classroom</h2>
+            <p>Access practice exams and personalized progress checks on <a href="https://apclassroom.collegeboard.org" target="_blank">AP Classroom</a>.</p>
+        </div>
+        <div class="resource">
+            <h2>Albert.io</h2>
+            <p>Practice with AP Calculus AB questions and get instant feedback on <a href="https://www.albert.io/courses/ap-calculus-ab" target="_blank">Albert.io</a>.</p>
+        </div>
+        <div class="resource">
+            <h2>Fiveable</h2>
+            <p>Join live review sessions and access study guides on <a href="https://fiveable.me/ap-calculus-ab/" target="_blank">Fiveable</a>.</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; <span id="copyright-year"></span> Tarushv Kosgi</p>
+    </footer>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+            document.querySelector('header').classList.toggle('dark-mode');
+            document.querySelector('nav').classList.toggle('dark-mode');
+            document.querySelector('footer').classList.toggle('dark-mode');
+            document.querySelectorAll('.tip').forEach(el => el.classList.toggle('dark-mode'));
+            document.querySelectorAll('.resource').forEach(el => el.classList.toggle('dark-mode'));
+        }
+
+        // Set dynamic copyright year
+        document.getElementById('copyright-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
